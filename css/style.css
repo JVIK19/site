@@ -1540,12 +1540,12 @@ img.img-placeholder {
 }
 
 .projects-grid .project-card .project-media img{
-	width: 100% !important;
-	height: 100% !important;
-	max-width: 100% !important;
-	max-height: 100% !important;
-	object-fit: contain !important;
-	display: block;
+    height: 70% !important;
+    width: auto !important;
+    max-height: 90% !important;
+    max-width: 90% !important;
+    object-fit: contain !important;
+    display: block;
 }
 
 .project-media i{
