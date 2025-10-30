@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo • Laravel</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css?v=3">
+</head>
+<body>
+  <main class="site-main" style="padding: 3rem 1rem;">
+    <section class="projects-area" style="max-width: 1000px; margin: 0 auto;">
+      <div class="projects-title text-center">
+        <h1 class="text-uppercase title-text">Demo • Laravel</h1>
+        <p class="parag">Protótipo estático de páginas/rotas típicas do Laravel.</p>
+      </div>
+      <div class="project-card" style="margin-top: 1.5rem;">
+        <div class="project-content">
+          <h4>Rotas (web.php) — conceito</h4>
+          <pre style="white-space: pre-wrap; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 12px; color: #fff;">
+Route::get('/', fn () => view('welcome'));
+Route::get('/posts', [PostController::class, 'index']);
+Route::get('/posts/{id}', [PostController::class, 'show']);
+</pre>
+          <h4 style="margin-top: 1rem;">Blade Component</h4>
+          <pre style="white-space: pre-wrap; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 12px; color: #fff;">
+&lt;x-card title="Post" :data="$post" /&gt;
+</pre>
+          <a href="../index.html#projects" class="btn btn-outline-custom" style="margin-top: 1rem;">Voltar</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

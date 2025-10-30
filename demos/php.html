@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo • PHP</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css?v=3">
+</head>
+<body>
+  <main class="site-main" style="padding: 3rem 1rem;">
+    <section class="projects-area" style="max-width: 1000px; margin: 0 auto;">
+      <div class="projects-title text-center">
+        <h1 class="text-uppercase title-text">Demo • PHP</h1>
+        <p class="parag">Exemplo simples apresentando um endpoint PHP (conceitual para GitHub Pages).</p>
+      </div>
+      <div class="project-card" style="margin-top: 1.5rem;">
+        <div class="project-content">
+          <h4>Exemplo de Router (conceito)</h4>
+          <p>Como o GitHub Pages é estático, este trecho é apenas ilustrativo.</p>
+          <pre style="white-space: pre-wrap; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 12px; color: #fff;">
+&lt;?php
+$rota = $_GET['p'] ?? 'home';
+switch ($rota) {
+  case 'home':
+    echo 'Bem-vindo ao site!';
+    break;
+  case 'sobre':
+    echo 'Sobre o projeto.';
+    break;
+  default:
+    http_response_code(404);
+    echo 'Página não encontrada';
+}
+</pre>
+          <a href="../index.html#projects" class="btn btn-outline-custom" style="margin-top: 1rem;">Voltar</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
