@@ -9,12 +9,6 @@
 @import url(partials/_global.css);
 
 
-/* Fallback CSS variables for GitHub Pages when partials are missing */
-:root {
-    --primary-color: #bd70f0;
-    --roboto: 'Roboto', sans-serif;
-}
-
 /* Background gradient for entire site */
 body {
     background:
@@ -22,7 +16,6 @@ body {
         radial-gradient(900px 700px at 110% 10%, rgba(139, 92, 246, 0.20), transparent 60%),
         radial-gradient(800px 600px at 20% 110%, rgba(59, 130, 246, 0.15), transparent 60%),
         linear-gradient(180deg, #0b1026 0%, #0a0b1e 50%, #070812 100%);
-    background-color: #0b1026; /* Solid fallback to avoid white-on-white */
     min-height: 100vh;
     color: rgba(255, 255, 255, 0.92);
     text-rendering: optimizeLegibility;
@@ -1543,6 +1536,13 @@ img.img-placeholder {
 	align-items: center;
 	justify-content: center;
 	position: relative;
+}
+
+.project-media img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	display: block;
 }
 
 .project-media i{
